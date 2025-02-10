@@ -3,6 +3,7 @@ let imagesData = [];
 fetch('images.json')
   .then(response => response.json())
   .then(data => {
+    console.log("Images data:", data);  // Check if JSON data is loaded correctly
     imagesData = data;
     displayImages(imagesData);
   })
