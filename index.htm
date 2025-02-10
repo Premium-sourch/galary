@@ -7,15 +7,28 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- Category Buttons -->
   <div class="category-filter">
     <button onclick="filterImages('Nature')">Nature</button>
     <button onclick="filterImages('Animal')">Animal</button>
     <button onclick="filterImages('Anime')">Anime</button>
     <button onclick="filterImages('All')">All</button>
   </div>
-  <div id="gallery" class="gallery">
-    <!-- Images will be dynamically loaded here -->
+
+  <!-- Image Gallery -->
+  <section class="gallery" id="gallery">
+    <!-- Images will be dynamically populated here -->
+  </section>
+
+  <!-- Modal for full-screen image view -->
+  <div class="modal" id="modal">
+    <div class="buttons">
+      <button onclick="closeModal()">Close</button>
+      <button onclick="downloadImage()">Download</button>
+    </div>
+    <img id="modal-image" src="" alt="Full image">
   </div>
-  <script src="script.js"></script>
+
 </body>
 </html>
+
