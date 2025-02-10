@@ -18,5 +18,41 @@
     "title": "Anime Art",
     "url": "images/photo4.jpg",
     "category": "Anime"
+  },
+  {
+    "title": "Beautiful Nature",
+    "url": "images/photo5.jpg",
+    "category": "Nature"
+  },
+  {
+    "title": "Cute Dog",
+    "url": "images/photo6.jpg",
+    "category": "Animal"
+  },
+  {
+    "title": "Anime Art",
+    "url": "images/photo7.jpg",
+    "category": "Anime"
+  },
+  {
+    "title": "Anime Art",
+    "url": "images/photo8.jpg",
+    "category": "Anime"
+  }
+  ,
+  {
+    "title": "Anime Art",
+    "url": "images/photo9.jpg",
+    "category": "Anime"
+  },
+  {
+    "title": "Anime Art",
+    "url": "images/photo10.jpg",
+    "category": "Anime"
+  },
+  {
+    "title": "Anime Art",
+    "url": "images/photo11.jpg",
+    "category": "Anime"
   }
 ]
