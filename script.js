@@ -1,32 +1,38 @@
-let imagesData = [];
+// Fetch and display images from JSON
+    fetch('images.json')
+      .then(response => response.json())
+      .then(data => {
+        const gallery = document.getElementById('gallery');
+        data.forEach(item => {
+          const imageDiv = document.createElement('div');
+          imageDiv.classList.add('image');
+          imageDiv.innerHTML = `
+            <img src="${item.src}" alt="${item.alt}" onclick="openModal('${item.src}')">
+          `;
+          gallery.appendChild(imageDiv);
+        });
+      })
+      .catch(error => console.error('Error loading JSON:', error));
 
-fetch('images.json')
-  .then(response => response.json())
-  .then(data => {
-    console.log("Images data:", data);  // Check if JSON data is loaded correctly
-    imagesData = data;
-    displayImages(imagesData);
-  })
-  .catch(error => {
-    console.error('Error loading the images.json file:', error);
-  });
+    // Open modal with the clicked image
+    function openModal(imageSrc) {
+      const modal = document.getElementById('modal');
+      const modalImage = document.getElementById('modal-image');
+      modal.style.display = 'flex';
+      modalImage.src = imageSrc;
+    }
 
-function displayImages(images) {
-  const gallery = document.getElementById('gallery');
-  gallery.innerHTML = '';
-  images.forEach(image => {
-    const imgElement = document.createElement('img');
-    imgElement.src = image.url;
-    imgElement.alt = image.title;
-    gallery.appendChild(imgElement);
-  });
-}
+    // Close the modal
+    function closeModal() {
+      const modal = document.getElementById('modal');
+      modal.style.display = 'none';
+    }
 
-function filterImages(category) {
-  if (category === 'All') {
-    displayImages(imagesData);
-  } else {
-    const filteredImages = imagesData.filter(image => image.category === category);
-    displayImages(filteredImages);
-  }
-}
+    // Download the image
+    function downloadImage() {
+      const imageSrc = document.getElementById('modal-image').src;
+      const link = document.createElement('a');
+      link.href = imageSrc;
+      link.download = imageSrc.split('/').pop();
+      link.click();
+    }
