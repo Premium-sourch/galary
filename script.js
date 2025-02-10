@@ -5,6 +5,9 @@ fetch('images.json')
   .then(data => {
     imagesData = data;
     displayImages(imagesData);
+  })
+  .catch(error => {
+    console.error('Error loading the images.json file:', error);
   });
 
 function displayImages(images) {
