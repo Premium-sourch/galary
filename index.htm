@@ -1,26 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Store</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <h1>Image Store</h1>
-
-    <!-- Container for Images (Loaded via JavaScript) -->
-    <div id="imageContainer"></div>
-
-    <!-- Modal for Enlarged Image -->
-    <div id="imageModal" class="modal">
-        <span id="closeModal" class="close-btn">&times;</span>
-        <span id="downloadIcon" class="download-icon">&#8595</span>
-        <img class="modal-content" id="modalImage">
-        <div id="imageDescription"></div>
-    </div>
-
-    <script src="script.js"></script>
+  <div class="category-filter">
+    <button onclick="filterImages('Nature')">Nature</button>
+    <button onclick="filterImages('Animal')">Animal</button>
+    <button onclick="filterImages('Anime')">Anime</button>
+    <button onclick="filterImages('All')">All</button>
+  </div>
+  <div id="gallery" class="gallery">
+    <!-- Images will be dynamically loaded here -->
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
