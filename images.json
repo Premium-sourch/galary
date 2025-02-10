@@ -1,0 +1,27 @@
+[
+    {
+        "src": "images/photo1.jpg",
+        "alt": "Beautiful Scenery"
+    },
+    {
+        "src": "images/photo2.jpg",
+        "alt": "City Night View"
+    },
+    {
+        "src": "images/photo3.jpg",
+        "alt": "Mountain Landscape"
+    },
+    {
+        "src": "images/photo4.jpg",
+        "alt": "Sunset Beach"
+    },
+   {
+        "src": "images/photo5.jpg",
+        "alt": "Sunset Beach"
+    },
+   {
+        "src": "images/photo6.jpg",
+        "alt": "Sunset Beach"
+    }
+  
+]
