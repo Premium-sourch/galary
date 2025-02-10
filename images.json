@@ -1,27 +1,22 @@
 [
-    {
-        "src": "images/photo1.jpg",
-        "alt": "Beautiful Scenery"
-    },
-    {
-        "src": "images/photo2.jpg",
-        "alt": "City Night View"
-    },
-    {
-        "src": "images/photo3.jpg",
-        "alt": "Mountain Landscape"
-    },
-    {
-        "src": "images/photo4.jpg",
-        "alt": "Sunset Beach"
-    },
-   {
-        "src": "images/photo5.jpg",
-        "alt": "Sunset Beach"
-    },
-   {
-        "src": "images/photo6.jpg",
-        "alt": "Sunset Beach"
-    }
-  
+  {
+    "title": "Beautiful Nature",
+    "url": "images/photo1.jpg",
+    "category": "Nature"
+  },
+  {
+    "title": "Cute Dog",
+    "url": "images/photo2.jpg",
+    "category": "Animal"
+  },
+  {
+    "title": "Anime Art",
+    "url": "images/photo3.jpg",
+    "category": "Anime"
+  },
+  {
+    "title": "Anime Art",
+    "url": "images/photo4.jpg",
+    "category": "Anime"
+  }
 ]
