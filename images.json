@@ -1,58 +1,61 @@
 [
   {
     "title": "Beautiful Nature",
-    "url": "images/photo1.jpg",
+    "src": "images/photo1.jpg",
+    "alt": "image 1",
     "category": "Nature"
   },
   {
-    "title": "Cute Dog",
-    "url": "images/photo2.jpg",
+    "title": "Beautiful Nature",
+    "src": "images/photo2.jpg",
+    "alt": "image 2",
     "category": "Animal"
   },
   {
-    "title": "Anime Art",
-    "url": "images/photo3.jpg",
-    "category": "Anime"
-  },
-  {
-    "title": "Anime Art",
-    "url": "images/photo4.jpg",
+    "title": "Beautiful Nature",
+    "src": "images/photo3.jpg",
+    "alt": "image 3",
     "category": "Anime"
   },
   {
     "title": "Beautiful Nature",
-    "url": "images/photo5.jpg",
+    "src": "images/photo4.jpg",
+    "alt": "image 4",
+    "category": "Object"
+  },
+  {
+    "src": "images/photo5.jpg",
+    "alt": "image 5",
     "category": "Nature"
   },
   {
-    "title": "Cute Dog",
-    "url": "images/photo6.jpg",
+    "title": "Beautiful Nature",
+    "src": "images/photo6.jpg",
+    "alt": "image 6",
     "category": "Animal"
   },
   {
-    "title": "Anime Art",
-    "url": "images/photo7.jpg",
+    "title": "Beautiful Nature",
+    "src": "images/photo7.jpg",
+    "alt": "image 7",
+    "category": "Object"
+  },
+  {
+    "src": "images/photo8.jpg",
+    "alt": "image 8",
     "category": "Anime"
   },
   {
-    "title": "Anime Art",
-    "url": "images/photo8.jpg",
-    "category": "Anime"
-  }
-  ,
-  {
-    "title": "Anime Art",
-    "url": "images/photo9.jpg",
-    "category": "Anime"
+    "title": "Beautiful Nature",
+    "src": "images/photo9.jpg",
+    "alt": "image 9",
+    "category": "Nature"
   },
   {
-    "title": "Anime Art",
-    "url": "images/photo10.jpg",
-    "category": "Anime"
-  },
-  {
-    "title": "Anime Art",
-    "url": "images/photo10.jpg",
-    "category": "Anime"
+    "title": "Beautiful Nature",
+    "src": "images/photo10.jpg",
+    "alt": "image 10",
+    "category": "Object"
   }
 ]
+
