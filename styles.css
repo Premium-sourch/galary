@@ -1,50 +1,50 @@
-   *,
-    *::before,
-    *::after {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+/* Reset styles */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    body {
-      font-family: Arial, sans-serif;
-    }
+body {
+  font-family: Arial, sans-serif;
+  background-color: #222;
+  color: white;
+}
 
-    .categories {
-      padding: 1rem;
-      text-align: center;
-      background-color: #333;
-    }
+.categories {
+  padding: 1rem;
+  text-align: center;
+  background-color: #333;
+}
 
-    .categories button {
-      background-color: #555;
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      margin: 5px;
-      cursor: pointer;
-      font-size: 16px;
-    }
+.categories button {
+  background-color: #555;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
 
-    .categories button:hover {
-      background-color: #777;
-    }
+.categories button:hover {
+  background-color: #777;
+}
 
-    .gallery {
-      column-count: 4;
-      --webkit-column-count: 4;
-      --moz-column-count: 4;
-      gap: 1rem;
-      padding: 4rem;
-    }
+.gallery {
+  column-count: 4;
+  column-gap: 1rem;
+  padding: 2rem;
+}
 
-    .image img {
-      height: auto;
-      width: 100%;
-      cursor: pointer;
-    }
+.image img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  border-radius: 8px;
+}
 
- /* Modal Styles */
+/* Modal Styles */
 .modal {
   display: none;
   position: fixed;
@@ -55,63 +55,55 @@
   background-color: rgba(0, 0, 0, 0.8);
   justify-content: center;
   align-items: center;
-  padding: 20px; /* Padding around the image for spacing */
+  padding: 20px;
   box-sizing: border-box;
 }
 
 .modal img {
   max-width: 100%;
-  width: auto;  /* Keep aspect ratio */
-  height: 100%;  /* Ensure the image fills the height of the modal */
-  object-fit: contain; /* Ensures image scales correctly */
-  margin: 20px; /* Margin to add space between the image and the modal edges */
-  border-radius: 8px; /* Optional: to give rounded corners to the image */
-  border: 2px solid #fff; 
+  width: auto;
+  height: 100%;
+  object-fit: contain;
+  margin: 20px;
+  border-radius: 8px;
+  border: 2px solid #fff;
 }
 
+.modal .buttons {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  gap: 10px;
+}
 
+.modal .buttons button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
 
-    .modal .buttons {
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      display: flex;
-      gap: 10px;
-    }
+.modal .buttons button:hover {
+  background-color: #555;
+}
 
-    .modal .buttons button {
-      background-color: #333;
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      cursor: pointer;
-    }
+/* Responsive styles */
+@media screen and (max-width: 810px) {
+  .gallery {
+    column-count: 3;
+  }
+}
 
-    .modal .buttons button:hover {
-      background-color: #555;
-    }
+@media screen and (max-width: 500px) {
+  .gallery {
+    column-count: 2;
+  }
+}
 
-    /* Responsive-ness for different screen-sizes */
-    @media screen and (max-width: 810px) {
-      .gallery {
-        column-count: 3;
-        --webkit-column-count: 3;
-        --moz-column-count: 3;
-      }
-    }
-
-    @media screen and (max-width: 500px) {
-      .gallery {
-        column-count: 2;
-        --webkit-column-count: 2;
-        --moz-column-count: 2;
-      }
-    }
-
-    @media screen and (max-width: 400px) {
-      .gallery {
-        column-count: 1;
-        --webkit-column-count: 1;
-        --moz-column-count: 1;
-      }
-    }
+@media screen and (max-width: 400px) {
+  .gallery {
+    column-count: 1;
+  }
+}
